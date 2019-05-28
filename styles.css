@@ -1,0 +1,385 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header img {
+    width: 200px;
+    height: 75px;
+    margin: 0.5em;
+}
+
+
+ul {
+    list-style: none;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+
+}
+
+#nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.nav-item {
+    margin: 0 4em;
+}
+
+.nav-link {
+    color: antiquewhite;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: darkgoldenrod;
+}
+
+section {
+    text-align: center;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation h1 {
+    margin-top: 2em;
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+}
+
+.presentation h3 {
+    font-size: 1.5em;
+    margin-bottom: 1.2em;
+
+}
+
+
+.catalog-email {
+    background-image: linear-gradient(rgb(216, 157, 8), rgb(255, 204, 95));
+    /* background-color: goldenrod; */
+}
+
+.catalog-email-title {
+    text-align: center;
+    font-size: 1.4em;
+    margin-top: 2em;
+    padding-top: 1.4em;
+}
+
+form {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+#email {
+    width: 350px;
+    font-size: 1em;
+    padding: 0.5em;
+}
+
+#submit {
+    font-size: 1em;
+    padding: 0.5em;
+    margin-left: 1em;
+    box-sizing: border-box;
+    border: 3px solid rgb(122, 110, 3);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.title {
+    margin-top: 2em;
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+}
+
+.about-content-container {
+    font-size: 1.6em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.about-content-text {
+    width: 70%;
+}
+
+#more {
+    display: none;
+}
+
+#readBtn {
+    font-size: 1em;
+    padding: 0.5em;
+    margin-left: 1em;
+    margin-bottom: 2em;
+    box-sizing: border-box;
+    border: 3px solid rgb(122, 110, 3);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#readBtn:hover {
+    color: white;
+    background-color: rgb(122, 110, 3); 
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    background-image: linear-gradient(rgb(216, 157, 8), rgb(255, 204, 95));
+
+}
+
+.features-content-container {
+    font-size: 1.6em;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.features-item {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 1em 0;
+}
+
+.icon {
+    font-size: 2em;
+    color: rgb(110, 84, 16);
+    padding: 0 1em;
+}
+
+#shipping-icon {
+    padding: 0 0.87em;
+}
+
+.features-item-description {
+    text-align: left;
+}
+
+.item-title {
+    margin: 0;
+}
+.item-text {
+    margin: 0;
+    font-size: 0.7em;
+}
+
+#item-description-last {
+    margin-bottom: 2em;
+}
+
+.pricing {
+    background-image: url("guitarclose.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: auto;
+    width: 100%;
+}
+
+#pricing-title {
+    margin: 0 0 1em 0;
+    padding-top: 1.3em;
+
+}
+
+.articles-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-column-gap: 4em;
+    padding-bottom: 4em;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    background-color: goldenrod;
+    height: auto;
+
+}
+
+.article-name {
+    font-size: 1.6em;
+    font-weight: 700;
+    padding-top: 0.7em;
+}
+
+.article-img {
+    width: 270px;
+    height: 400px;
+}
+
+.article-img img {
+    width: 100%;
+    height: auto;
+}
+
+#order-btn {
+    font-size: 1em;
+    margin: 1em;
+    padding: 0.5em;
+    box-sizing: border-box;
+    border: 3px solid rgb(122, 110, 3);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#order-btn:hover {
+    color: white;
+    background-color: rgb(122, 110, 3); 
+}
+.footer {
+    background-color: black;
+    color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright-container {
+    margin-left: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.footer-nav-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 4em;
+}
+
+.footer-nav-items {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.footer-nav-item {
+    padding: 1.5em;
+}
+
+.footer-nav-link {
+    color: antiquewhite;
+    font-size: 1em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.footer-nav-link:hover {
+    color: darkgoldenrod;
+}
+
+
+@media only screen and (max-width: 940px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #video {
+        width: 560px;
+        height: 315px;
+    }
+
+    .features-content-container {
+        width: 75%;
+    }
+
+    .articles-container {
+        grid-template-columns: auto;
+    }
+
+    .article {
+        margin: 1em 0;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+
+    .copyright-container {
+        margin: 0;
+    }
+    .footer-nav-bar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #nav-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #video {
+        width: 450px;
+        height: 253px;
+    }
+
+    .features-content-container {
+        width: 90%;
+    }
+
+    .icon {
+        font-size: 1.5em;
+        padding: 0 0.5em;
+    }
+
+    #shipping-icon {
+        padding: 0 0.35em;
+    }
+
+    .copyright-text {
+        font-size: 0.7em;
+    }
+
+}
+
+@media only screen and (max-width: 520px) {
+    #submit {
+        margin-top: 1em;
+    }
+
+    .copyright-text {
+        font-size: 0.65em;
+    }
+}

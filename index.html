@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#top">
+            <img src="logo.png" alt="Company Logo">
+        </a>
+        <nav id="nav">
+            <ul id="nav-items">
+                <li class="nav-item">
+                    <a href="#ab" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#ft" class="nav-link">FEATURES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pr" class="nav-link">PRICING</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="presentation">
+        <div class="presentation-content"></div>
+            <h1 id="top">GET YOUR DREAM GUITAR</h1>
+        </div>
+        <div class="presentation-content">
+            <h3>New Custom Series Available</h3>
+        </div>
+        <div class="presentation-content" id="video-container">
+                <iframe id="video" width="800" height="450" src="https://www.youtube.com/embed/tsfTnYRHNzY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>    
+    <section class="catalog-email">
+        <h3 class="catalog-email-title">Subscribe and get a 10% discount on the purchase of any guitar of the new collection! </h3>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input type="email" name="email" id="email" placeholder="Enter your email adress" required>
+            <input type="submit" id="submit" value="SUBSCRIBE">
+        </form>
+    </section>
+    <section class="about" id="ab">
+        <h1 class="title">ABOUT</h1>
+        <div class="about-content-container">
+            <div class="about-content-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam<span id="dots">...</span><span id="more">, quis nostrud 
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                     ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                     mollit anim id est laborum.</span></p>
+            </div>
+        </div>
+        <button onclick="readMoreLess()" id="readBtn">Read more</button>
+    </section>
+    <section class="features" id="ft">
+        <h1 class="title">FEATURES</h1>
+        <div class="features-content-container">
+            <div class="features-item">
+                <div class="icon">
+                    <i class="fas fa-guitar"></i>
+                </div>
+                <div class="features-item-description">
+                    <h3 class="item-title">Best quality materials</h3>
+                    <p class="item-text">Top class wood, components and electronics of the market, carefully selected for making the best instruments.</p>
+                </div>
+            </div>
+            <div class="features-item">
+                <div class="icon">                
+                    <i class="fas fa-pencil-ruler"></i>
+                </div>
+                <div class="features-item-description">
+                        <h3 class="item-title">Hand-crafted 100% personalized design</h3>
+                        <p class="item-text">All our products are made following your specifications. We offer a wide range of options for you to choose.</p>
+                    </div>
+            </div>
+            <div class="features-item">
+                <div class="icon" id="shipping-icon">                
+                    <i class="fas fa-shipping-fast"></i>
+                </div>
+                <div class="features-item-description" id="item-description-last">
+                        <h3 class="item-title">Fast shipping</h3>
+                        <p class="item-text">We make sure you receive your guitar as soon as we finished making it. US shipping is for free.</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="pricing" id="pr">
+        <h1 class="title" id="pricing-title">PRICING</h1>
+        <div class="articles-container">
+            <div class="article">
+                <div class="article-name">CLASSIC</div>
+                <div class="article-price">
+                    <h2>$800</h2>
+                </div>
+                <div class="article-img">
+                    <img src="strat.jpg" alt="Classic Guitar Model">
+                </div>
+                <div class="article-btn">
+                    <button id="order-btn" type="submit">ORDER</button>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-name">MODERN</div>
+                <div class="article-price">
+                    <h2>$1200</h2>
+                </div>
+                <div class="article-img">
+                    <img src="prs.jpg" alt="Classic Guitar Model">
+                </div>
+                <div class="article-btn">
+                    <button id="order-btn" type="submit">ORDER</button>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-name">CUSTOM</div>
+                <div class="article-price">
+                    <h2>$1600</h2>
+                </div>
+                <div class="article-img">
+                    <img src="custom.jpg" alt="Classic Guitar Model">
+                </div>
+                <div class="article-btn">
+                    <button id="order-btn" type="submit">ORDER</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="copyright-container">
+            <p class="copyright-text">Copyright© 2019 Maxi Spoltore. This is my third freeCodeCamp Responsive Web Design project</p>
+        </div>
+        <div class="footer-nav-bar">
+            <ul class="footer-nav-items">
+                <li class="footer-nav-item">
+                    <a href="#ab" class="footer-nav-link">ABOUT</a>
+                </li>
+                <li class="footer-nav-item">
+                    <a href="#ft" class="footer-nav-link">FEATURES</a>
+                </li>
+                <li class="footer-nav-item">
+                    <a href="#pr" class="footer-nav-link">PRICING</a>
+                </li>
+            </ul>            
+        </div>
+    </footer>
+</body>
+</html>
